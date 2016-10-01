@@ -1,0 +1,39 @@
+
+.purple-body{
+	background:$purple;
+}
+
+//nexted styling using Sass
+.ex1-text-wrapper{
+	height:100%;
+	//Using flexbox is a good way to position elements on the page
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	.ex1-text{
+		h2{
+			color:white;
+			font-family:$pat-font;
+			font-size:22px;
+			font-weight:400;
+		}
+	}
+}
+
+.ex1-next{
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:1.5em;
+	
+	height:60px;
+	transition:.1s all;
+	transform:scale(.9);
+	&:hover{
+		transform:scale(1);
+		cursor:pointer;
+	}
+	&:active{
+		transform:scale(.9);
+	}
+}

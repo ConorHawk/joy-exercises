@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "menu.scss";
+@import "progress.scss";
+@import "ex1.scss";
+@import "ex2.scss";
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family:$bree-font;
+    font-weight:400;
+}
+
+.animsition-overlay-slide{
+	z-index:9999999;
+	background:$purple;
+}
+
+.animsition-overlay{
+	height:100%;
+	// z-index:9999999;
+}
